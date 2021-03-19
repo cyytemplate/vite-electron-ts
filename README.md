@@ -6,7 +6,6 @@
 </div>
 
 ![](https://img.shields.io/badge/Vue-^3.0.5-brightgreen?style=plastic&logo=Vue.js)
-
 ![](https://img.shields.io/badge/Electron-^12.0.1-brightgreen?style=plastic&logo=electron)
 
 This template should help get you started developing with Vite、Vue 3 and Typescript in Electron.
