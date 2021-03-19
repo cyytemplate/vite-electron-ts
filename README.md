@@ -6,9 +6,10 @@
 </div>
 
 <div style="text-align: center;">
-![](https://img.shields.io/badge/Vue-^3.0.5-brightgreen?style=plastic&logo=Vue.js)
-![](https://img.shields.io/badge/Electron-^12.0.1-brightgreen?style=plastic&logo=electron)
+  <img src="https://img.shields.io/badge/Vue-^3.0.5-brightgreen?style=plastic&logo=Vue.js">
+  <img src="https://img.shields.io/badge/Electron-^12.0.1-brightgreen?style=plastic&logo=electron">
 </div>
+
 This template should help get you started developing with Vite、Vue 3 and Typescript in Electron.
 
 ## How to Use
