@@ -1,24 +1,30 @@
 {
-  "name": "vite-electron",
+  "name": "vite-electron-ts",
   "version": "0.0.0",
-  "description": "vite-electron",
+  "description": "vite-electron-ts",
+  "main": "dist/main/index.js",
   "scripts": {
     "dev": "electron-dev-runner src/main/index.ts --vite",
     "start": "electron dist/main/index.js",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "build": "tsc src/main/index.ts --moduleResolution Node --removeComments -t ES5 --outDir dist/main && vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "bd": "yarn build && electron-builder",
+    "bdm": "yarn build && electron-builder -m",
+    "bdw": "yarn build && electron-builder -w"
   },
   "dependencies": {
-    "@cyyjs/electron-router": "^0.1.5",
-    "electron": "^12.0.1",
+    "@cyyjs/electron-router": "^0.2.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.5",
+    "electron-builder": "^22.10.5",
     "typescript": "^4.1.3",
     "vite": "^2.1.0",
-    "vue-tsc": "^0.0.8"
+    "vue-tsc": "^0.0.8",
+    "electron": "^12.0.1",
+    "electron-dev-runner": "^1.0.0"
   },
   "license": "MIT",
   "author": {
@@ -26,12 +32,22 @@
     "email": "cyyjs@cyyjs.top"
   },
   "repository": {
-    "url": "git@github.com:cyytemplate/vite-electron.git"
+    "url": "git@github.com:cyytemplate/vite-electron-ts.git"
   },
-  "homepage": "https://github.com/cyytemplate/vite-electron",
+  "homepage": "https://github.com/cyytemplate/vite-electron-ts",
   "keywords": [
     "vite",
     "vue",
     "electron"
-  ]
+  ],
+  "build": {
+    "productName": "vue-electron-template",
+    "appId": "top.cyyjs",
+    "directories": {
+      "output": "build/dist"
+    },
+    "files": [
+      "dist/**/*"
+    ]
+  }
 }

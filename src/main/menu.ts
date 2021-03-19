@@ -20,6 +20,7 @@ const template: MenuItemConstructorOptions[] = [
     role: 'window',
     label: '窗口',
     submenu: [
+      {label: '重新加载', role: 'reload'},
       { label: '最小化', role: 'minimize' }
     ]
   },
@@ -30,13 +31,13 @@ const template: MenuItemConstructorOptions[] = [
       {
         label: '反馈建议',
         click() {
-          shell.openExternal('https://github.com/cyytemplate/vite-electron/issues')
+          shell.openExternal('https://github.com/cyytemplate/vite-electron-ts/issues')
         }
       },
       {
         label: 'GitHub',
         click() {
-          shell.openExternal('https://github.com/cyytemplate/vite-electron')
+          shell.openExternal('https://github.com/cyytemplate/vite-electron-ts')
         }
       }
     ]

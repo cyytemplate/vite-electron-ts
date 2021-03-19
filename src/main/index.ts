@@ -2,12 +2,10 @@ import { join } from 'path';
 import { app, BrowserWindow } from 'electron';
 import './router';
 import './menu';
-const isDev = process.env.NODE_ENV === 'development' || !app.isPackaged;
+const isDev = process.env.NODE_ENV === 'development'
 const WinURL = isDev
   ? `http://localhost:3000`
   : 'file://' + join(__dirname, '../../dist/render/index.html')
-
-// require('./menu')
 
 let mainWindow: BrowserWindow | null = null
 let willQuitApp = false

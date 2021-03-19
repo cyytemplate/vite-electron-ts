@@ -1,6 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <img class="logo" alt="Vue logo" src="./assets/vite.svg" />
+  <img class="logo" alt="Vue logo" src="./assets/logo.png" />
+  <img class="logo" alt="Vue logo" src="./assets/electron.png" />
+  <HelloWorld :msg="msg" />
 </template>
 
 <script lang="ts">
@@ -14,12 +16,12 @@ export default defineComponent({
   },
   data () {
     return {
-      apiData: null
+      msg: ''
     }
   },
   mounted() {
-    getHello().then(data => {
-      console.log(data)
+    getHello().then((res: any) => {
+      this.msg = res.data
     })
   }
 })
@@ -33,5 +35,9 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo {
+  width: 150px;
+  margin-right: 20px;
 }
 </style>

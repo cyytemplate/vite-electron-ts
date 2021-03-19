@@ -1,5 +1,5 @@
 const Router = require('@cyyjs/electron-router');
 
 Router.get('hello', () => {
-  return 'hello word!'
+  return 'Electron + Vue 3 + TypeScript + Vite!'
 })
