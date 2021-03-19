@@ -1,8 +1,8 @@
 # Electron + Vue 3 + Typescript + Vite Project Template
 <div center>
-  <img width="150px" src="./render/assets/vite.svg">
-  <img width="150px" src="./render/assets/logo.png">
-  <img width="150px" src="./render/assets/electron.png">
+  <img width="120px" src="./src/render/assets/vite.svg">
+  <img width="120px" src="./src/render/assets/logo.png">
+  <img width="120px" src="./src/render/assets/electron.png">
 </div>
 
 ![](https://img.shields.io/badge/Vue-^3.0.5-brightgreen?style=plastic&logo=Vue.js)
