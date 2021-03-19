@@ -18,6 +18,8 @@ clone this repository or use [ctm-cli](https://www.npmjs.com/package/ctm-cli) to
 
 ## Run Dev
 
+Listen for main process file changes to restart
+
 ```sh
 yarn dev
 ```
