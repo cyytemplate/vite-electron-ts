@@ -12,5 +12,10 @@ export default defineConfig({
     outDir,
     emptyOutDir: true
   },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src/render')
+    }
+  },
   plugins: [vue()]
 })

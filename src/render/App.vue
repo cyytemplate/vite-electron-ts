@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 import { getHello } from './api';
 export default defineComponent({
   name: 'App',
