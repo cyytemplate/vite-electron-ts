@@ -19,8 +19,8 @@ function createWindow () {
     titleBarStyle: 'hidden',
     webPreferences: {
       contextIsolation: false,
-      enableRemoteModule: false,
-      webSecurity: true,
+      // enableRemoteModule: false,
+      // webSecurity: true,
       nodeIntegration: true
     }
   })
